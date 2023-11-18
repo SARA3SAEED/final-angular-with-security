@@ -1,0 +1,16 @@
+
+
+<app-order-details></app-order-details>
+
+<div>
+    <h3>Payment</h3>
+    <label for="paymentMethod">Payment Method:</label>
+    <input type="text" id="orderNo" [(ngModel)]="orderNo" required>
+    <select id="paymentMethod" [(ngModel)]="selectedPaymentMethod">
+      <option value="CREDIT_CARD">Credit Card</option>
+      <option value="CASH">Cash</option>
+    </select>
+    
+    <button (click)="makePayment(orderNo, selectedPaymentMethod)">Make Payment</button>
+  
+  </div>

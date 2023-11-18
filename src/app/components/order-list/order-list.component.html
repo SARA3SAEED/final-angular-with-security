@@ -1,0 +1,25 @@
+
+
+<app-nav-bar></app-nav-bar>
+<app-create-order></app-create-order>
+
+<h2>Order List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Order No</th>
+      <th>Total</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.id }}</td>
+      <td><a [routerLink]="['/orders', order.orderno]">{{ order.orderno }}</a></td>
+      <td>{{ order.total }}</td>
+      <td>{{ order.orderStatus }}</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,87 @@
+
+
+<app-nav-bar></app-nav-bar>
+
+
+
+   <!-- product.component.html -->
+
+<div>
+    <h2>Add/Edit Product</h2>
+    <form [formGroup]="newProductForm" (ngSubmit)="onSubmit()">
+      <label>Type:</label>
+      <select formControlName="type">
+        <option value="PHYSICAL">Physical</option>
+        <option value="DIGITAL">Digital</option>
+      </select>
+  
+      <label>Barcode:</label>
+      <input formControlName="barcod" />
+  
+      <label>Product Name:</label>
+      <input formControlName="product_name" />
+  
+      <label>Description:</label>
+      <input formControlName="description" />
+  
+      <label>Price:</label>
+      <input formControlName="price" />
+  
+      <label>Serial No:</label>
+      <input formControlName="serialNo" />
+  
+      <label>Provider:</label>
+      <input formControlName="provider" />
+  
+      <label>Weight:</label>
+      <input formControlName="weight" />
+  
+      <label>Height:</label>
+      <input formControlName="height" />
+  
+      <button type="submit" [disabled]="!newProductForm.valid">Submit</button>
+      <button type="button" (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+  
+  <div *ngIf="products && products.length > 0">
+    <h2>Product List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Barcode</th>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Weight</th>
+          <th>Height</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.product_id }}</td>
+          <td>{{ product.barcod }}</td>
+          <td>{{ product.product_name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price | currency }}</td>
+          <td>{{ product.weight }}</td>
+          <td>{{ product.height }}</td>
+          <td>
+            <button (click)="editProduct(product)">Edit</button>
+            <button (click)="deleteProduct(product.barcod)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div *ngIf="products && products.length === 0">
+    <p>No products available.</p>
+  </div>
+  
+  <div *ngIf="!products">
+    <p>Loading products...</p>
+  </div>
+  
