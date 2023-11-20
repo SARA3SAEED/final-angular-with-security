@@ -8,6 +8,7 @@ import { OrderService } from 'src/app/services/order.service';
   styleUrls: ['./create-order.component.css']
 })
 export class CreateOrderComponent implements OnInit {
+  
   [x: string]: any;
 orders: any;
 

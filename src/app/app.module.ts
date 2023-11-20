@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProductComponent } from './components/product/product.component';
+import { SearchComponent } from './components/search/search.component';
 // import { PaymentComponent } from './components/payment/payment.component';
 
 
@@ -25,6 +26,7 @@ import { ProductComponent } from './components/product/product.component';
     HomeComponent,
     NavBarComponent,
     ProductComponent,
+    SearchComponent,
     // PaymentComponent,
   
    

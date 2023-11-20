@@ -1,0 +1,33 @@
+<!-- Add this at the top of your HTML template -->
+
+<section>
+    <h2>Search Order</h2>
+    <!-- search.component.html -->
+
+<div *ngIf="searchResult">
+    <div>{{ searchResult.id }}</div>
+  </div>
+
+  <label for="orderId">Search by ID:</label>
+  <input type="number" id="orderId" [(ngModel)]="orderId" />
+  <button (click)="searchById()">Search</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Order No</th>
+        <th>Total</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>{{ order.id }}</td>
+        <td><a [routerLink]="['/orders', order.orderno]">{{ order.orderno }}</a></td>
+        <td>{{ order.total }}</td>
+        <td>{{ order.orderStatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
