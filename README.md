@@ -1,27 +1,23 @@
-# Pos
+# Pos (Point Of Seles)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source file.
 
-## Code scaffolding
+<img width="921" alt="front-end" src="https://github.com/SARA3SAEED/final-angular-with-security/assets/146086114/9c9f6284-c93b-4a3c-912a-ce0d0dad6268">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-------------------------------------------------------------------------------------------------------------------
 
-## Running unit tests
+##Trello:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://trello.com/b/T37VpEnw/pos-service
 
-## Running end-to-end tests
+--------------------------------------------------------------------------------------------------------------------
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##Presentation:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://www.canva.com/design/DAFyVjVkXrA/x92nYhquJaIE41qKYun7gw/edit
